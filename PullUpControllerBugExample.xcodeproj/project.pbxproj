@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		803AEE6D21735D0200A1EDA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AEE6B21735D0200A1EDA2 /* MainViewController.swift */; };
+		803AEE6E21735D0200A1EDA2 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 803AEE6C21735D0200A1EDA2 /* MainViewController.xib */; };
+		803AEE7221735EAA00A1EDA2 /* ExamplePullUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AEE7021735EAA00A1EDA2 /* ExamplePullUpController.swift */; };
+		803AEE7321735EAA00A1EDA2 /* ExamplePullUpController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 803AEE7121735EAA00A1EDA2 /* ExamplePullUpController.xib */; };
 		803FF48521735898000DC815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FF48421735898000DC815 /* AppDelegate.swift */; };
 		803FF48C2173589C000DC815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803FF48B2173589C000DC815 /* Assets.xcassets */; };
 		803FF48F2173589C000DC815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803FF48D2173589C000DC815 /* LaunchScreen.storyboard */; };
@@ -16,6 +20,10 @@
 /* Begin PBXFileReference section */
 		26D0390924B160FEF7AE4BA8 /* Pods_PullUpControllerBugExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PullUpControllerBugExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77519A968DCAF5D002243895 /* Pods-PullUpControllerBugExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullUpControllerBugExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PullUpControllerBugExample/Pods-PullUpControllerBugExample.debug.xcconfig"; sourceTree = "<group>"; };
+		803AEE6B21735D0200A1EDA2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		803AEE6C21735D0200A1EDA2 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		803AEE7021735EAA00A1EDA2 /* ExamplePullUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePullUpController.swift; sourceTree = "<group>"; };
+		803AEE7121735EAA00A1EDA2 /* ExamplePullUpController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExamplePullUpController.xib; sourceTree = "<group>"; };
 		803FF48121735898000DC815 /* PullUpControllerBugExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullUpControllerBugExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		803FF48421735898000DC815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		803FF48B2173589C000DC815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +70,33 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		803AEE6921735C9900A1EDA2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				803AEE6F21735E8F00A1EDA2 /* ExamplePullUpController */,
+				803AEE6A21735CCD00A1EDA2 /* MainViewController */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		803AEE6A21735CCD00A1EDA2 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				803AEE6B21735D0200A1EDA2 /* MainViewController.swift */,
+				803AEE6C21735D0200A1EDA2 /* MainViewController.xib */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		803AEE6F21735E8F00A1EDA2 /* ExamplePullUpController */ = {
+			isa = PBXGroup;
+			children = (
+				803AEE7021735EAA00A1EDA2 /* ExamplePullUpController.swift */,
+				803AEE7121735EAA00A1EDA2 /* ExamplePullUpController.xib */,
+			);
+			path = ExamplePullUpController;
+			sourceTree = "<group>";
+		};
 		803FF47821735898000DC815 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +118,7 @@
 		803FF48321735898000DC815 /* PullUpControllerBugExample */ = {
 			isa = PBXGroup;
 			children = (
+				803AEE6921735C9900A1EDA2 /* Screens */,
 				803AEE6821735C3800A1EDA2 /* Resources */,
 				803AEE6721735C1C00A1EDA2 /* Application */,
 			);
@@ -160,6 +196,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				803FF48F2173589C000DC815 /* LaunchScreen.storyboard in Resources */,
+				803AEE6E21735D0200A1EDA2 /* MainViewController.xib in Resources */,
+				803AEE7321735EAA00A1EDA2 /* ExamplePullUpController.xib in Resources */,
 				803FF48C2173589C000DC815 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				803FF48521735898000DC815 /* AppDelegate.swift in Sources */,
+				803AEE6D21735D0200A1EDA2 /* MainViewController.swift in Sources */,
+				803AEE7221735EAA00A1EDA2 /* ExamplePullUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JE6A9LTMD3;
-				INFOPLIST_FILE = PullUpControllerBugExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PullUpControllerBugExample/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -386,7 +426,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JE6A9LTMD3;
-				INFOPLIST_FILE = PullUpControllerBugExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PullUpControllerBugExample/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
