@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		803FF48521735898000DC815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FF48421735898000DC815 /* AppDelegate.swift */; };
-		803FF48721735898000DC815 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FF48621735898000DC815 /* ViewController.swift */; };
-		803FF48A21735898000DC815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803FF48821735898000DC815 /* Main.storyboard */; };
 		803FF48C2173589C000DC815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803FF48B2173589C000DC815 /* Assets.xcassets */; };
 		803FF48F2173589C000DC815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803FF48D2173589C000DC815 /* LaunchScreen.storyboard */; };
 		BA12233081978007CE92938B /* Pods_PullUpControllerBugExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D0390924B160FEF7AE4BA8 /* Pods_PullUpControllerBugExample.framework */; };
@@ -20,8 +18,6 @@
 		77519A968DCAF5D002243895 /* Pods-PullUpControllerBugExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullUpControllerBugExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PullUpControllerBugExample/Pods-PullUpControllerBugExample.debug.xcconfig"; sourceTree = "<group>"; };
 		803FF48121735898000DC815 /* PullUpControllerBugExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullUpControllerBugExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		803FF48421735898000DC815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		803FF48621735898000DC815 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		803FF48921735898000DC815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		803FF48B2173589C000DC815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		803FF48E2173589C000DC815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		803FF4902173589C000DC815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +44,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		803AEE6721735C1C00A1EDA2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				803FF48421735898000DC815 /* AppDelegate.swift */,
+				803FF48D2173589C000DC815 /* LaunchScreen.storyboard */,
+				803FF4902173589C000DC815 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		803AEE6821735C3800A1EDA2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				803FF48B2173589C000DC815 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		803FF47821735898000DC815 = {
 			isa = PBXGroup;
 			children = (
@@ -69,12 +83,8 @@
 		803FF48321735898000DC815 /* PullUpControllerBugExample */ = {
 			isa = PBXGroup;
 			children = (
-				803FF48421735898000DC815 /* AppDelegate.swift */,
-				803FF48621735898000DC815 /* ViewController.swift */,
-				803FF48821735898000DC815 /* Main.storyboard */,
-				803FF48B2173589C000DC815 /* Assets.xcassets */,
-				803FF48D2173589C000DC815 /* LaunchScreen.storyboard */,
-				803FF4902173589C000DC815 /* Info.plist */,
+				803AEE6821735C3800A1EDA2 /* Resources */,
+				803AEE6721735C1C00A1EDA2 /* Application */,
 			);
 			path = PullUpControllerBugExample;
 			sourceTree = "<group>";
@@ -151,7 +161,6 @@
 			files = (
 				803FF48F2173589C000DC815 /* LaunchScreen.storyboard in Resources */,
 				803FF48C2173589C000DC815 /* Assets.xcassets in Resources */,
-				803FF48A21735898000DC815 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +225,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				803FF48721735898000DC815 /* ViewController.swift in Sources */,
 				803FF48521735898000DC815 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,14 +232,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		803FF48821735898000DC815 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				803FF48921735898000DC815 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		803FF48D2173589C000DC815 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,11 +367,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JE6A9LTMD3;
 				INFOPLIST_FILE = PullUpControllerBugExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fixique.PullUpControllerBugExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -383,11 +387,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JE6A9LTMD3;
 				INFOPLIST_FILE = PullUpControllerBugExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fixique.PullUpControllerBugExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
